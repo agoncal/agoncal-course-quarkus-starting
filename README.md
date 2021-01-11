@@ -69,6 +69,38 @@ mvn package -Dquarkus.package.type=native -Dquarkus.native.container-build=true
 mvn verify -Pnative
 ```
 
+### Containerizing the Application
+
+```shell script
+mvn quarkus:add-extension -Dextensions="container-image-docker"
+
+mvn package -Dquarkus.container-image.build=true
+
+mvn package -Dquarkus.container-image.build=true -Dquarkus.package.type=jar
+
+mvn package -Dquarkus.container-image.build=true -Dquarkus.package.type=fast-jar -Dquarkus.container-image.tag=jvm
+
+docker run -i --rm -p 8080:8080 agoncal/rest-book:jvm
+```
+
+```shell script
+mvn quarkus:add-extension -Dextensions="container-image-docker"
+
+mvn package -Dquarkus.container-image.build=true
+
+mvn package -Dquarkus.container-image.build=true -Dquarkus.package.type=jar
+
+mvn package -Dquarkus.container-image.build=true -Dquarkus.package.type=fast-jar -Dquarkus.container-image.tag=jvm
+
+docker run -i --rm -p 8080:8080 agoncal/rest-book:jvm
+```
+
+```shell script
+mvn package -Dquarkus.package.type=native -Dquarkus.native.container-build=true -Dquarkus.container-image.build=true -Dquarkus.container-image.tag=native
+
+docker run -i --rm -p 8080:8080 agoncal/rest-book:native
+```
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
