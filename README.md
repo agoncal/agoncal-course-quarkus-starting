@@ -4,6 +4,71 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
+## Commands
+
+### First Hands on Quarkus
+
+```shell script
+./mvnw quarkus:dev
+
+./mvnw test
+
+curl http://localhost:8080/api/books
+```
+
+### Developing the Application
+
+```shell script
+mvn quarkus:dev
+
+curl http://localhost:8080/api/books
+curl http://localhost:8080/api/books/count
+curl http://localhost:8080/api/books/1
+```
+
+### Testing the Application
+
+```shell script
+mvn test
+```
+
+### Configuring the Application
+
+```shell script
+mvn quarkus:dev
+mvn quarkus:dev -Dbooks.genre=IT
+mvn quarkus:dev -Dbooks.genre="Sci fi"
+
+mvn test
+mvn test -Dbooks.genre="Sci fi"
+
+mvn quarkus:dev -Dquarkus.profile=staging
+```
+
+### Packaging the Application
+
+```shell script
+mvn package
+mvn package -Dquarkus.package.type=jar
+mvn package -Dquarkus.package.type=fast-jar
+mvn package -Dquarkus.package.type=uber-jar
+
+java -jar target/rest-book-runner.jar
+```
+
+```shell script
+mvn package -Dquarkus.package.type=native
+./target/rest-book-runner
+
+mvn package -Dquarkus.package.type=native -Dquarkus.native.container-build=true
+./target/rest-book-runner
+/!\ error
+```
+
+```shell script
+mvn verify -Pnative
+```
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
