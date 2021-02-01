@@ -1,5 +1,10 @@
 package org.agoncal.quarkus.starting;
 
+/**
+ * @author Antonio Goncalves
+ *         http://www.antoniogoncalves.org
+ *         --
+ */
 public class Book {
 
   public int id;

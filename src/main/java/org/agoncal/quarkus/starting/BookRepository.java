@@ -6,6 +6,11 @@ import javax.enterprise.context.ApplicationScoped;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @author Antonio Goncalves
+ *         http://www.antoniogoncalves.org
+ *         --
+ */
 @ApplicationScoped
 public class BookRepository {
 

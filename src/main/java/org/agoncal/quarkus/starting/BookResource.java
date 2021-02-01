@@ -11,6 +11,11 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @author Antonio Goncalves
+ *         http://www.antoniogoncalves.org
+ *         --
+ */
 @Path("/api/books")
 @Produces(MediaType.APPLICATION_JSON)
 public class BookResource {
