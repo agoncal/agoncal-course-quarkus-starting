@@ -14,7 +14,7 @@ import java.util.Optional;
 @ApplicationScoped
 public class BookRepository {
 
-  @ConfigProperty(name = "books.genre")
+  @ConfigProperty(name = "books.genre", defaultValue = "Sci-Fi")
   String genre;
 
   public List<Book> getAllBooks() {
