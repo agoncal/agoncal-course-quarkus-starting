@@ -1,6 +1,6 @@
 # AGoncal Course: Starting with Quarkus
 
-Code of my [Starting with Quarkus](https://www.udemy.com/course/quarkus-starting-with-quarkus/?referralCode=326B47EE8A3032346159) course.
+Code of my [Starting with Quarkus](https://agoncal.teachable.com/p/course-starting-with-quarkus) course.
 
 ![Travis](https://travis-ci.org/agoncal/agoncal-course-quarkus-starting.svg?branch=master)
 
@@ -29,4 +29,4 @@ The different steps you'll go through are:
 At the end of the course you'll get a good understanding of Quarkus.
 You will be able to bootstrap, develop, package and execute a REST application, but most important, take Quarkus to your next project.
 
-![Starting with Quarkus](https://raw.githubusercontent.com/agoncal/agoncal-course-quarkus-starting/master/cover.png)
+[![Starting with Quarkus](https://raw.githubusercontent.com/agoncal/agoncal-course-quarkus-starting/master/cover.png)](https://agoncal.teachable.com/p/course-starting-with-quarkus)
